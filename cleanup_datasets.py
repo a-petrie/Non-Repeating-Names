@@ -28,9 +28,9 @@ def read_name_dataset(dataset_file: str) -> [str]:
         return [name.strip() for name in f.readlines()]
 
 def clean_dataset(dataset: str) -> None:
-    names = read_name_dataset(FIRST_NAMES)
+    names = read_name_dataset(dataset)
     names = cleanup(names) 
-    with open(FIRST_NAMES, "w") as f:
+    with open(dataset, "w") as f:
         f.write("\n".join(names))
 
 if __name__ == "__main__":
