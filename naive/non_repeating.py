@@ -7,12 +7,13 @@ from utils import load_dataset, has_no_repeating_characters
 
 from itertools import product
 
+def non_repeating(first_names, last_names):
+    names = (f"{first} {last}" for first, last in product(first_names, last_names))
+    return (name for name in names if has_no_repeating_characters(name))
+
 if __name__ == "__main__":
     first_names, last_names = load_dataset()
 
-    names = (f"{first} {last}" for first, last in product(first_names, last_names))
-    non_repeating_names = (name for name in names if has_no_repeating_characters(name))
-
     with open("result.txt", "w") as f:
-        for name in non_repeating_names:
+        for name in non_repeating(first_names, last_names):
             f.write(name + "\n")
