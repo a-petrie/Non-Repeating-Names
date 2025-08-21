@@ -24,18 +24,19 @@ First off, let's just take the naive approach: we consider all pairs of names an
 def has_no_repeating_characters(string: str) -> bool:
     return len(name) == len(set(name))
 
-non_repeating_names = []
+names = (f"{first} {last}" for first, last in product(first_names, last_names))
+non_repeating_names = (name for name in names if has_no_repeating_characters(name))
 
-for first, last in product(first_names, last_names):
-    name = f"{first} {last}"
-    if has_no_repeating_characters(name):
-        print(f"{name} has no repeating characters")
-        non_repeating_names.append(name)        
+with open("result.txt", "w") as f:
+    for name in non_repeating_names:
+        f.write(name + "\n")
 ```
 
-This naive solution is clearly suboptimal, it has time complexity `O(M*N)` where `M` and `N` are the number of first and last names respectivelt. For our dataset this is 15,789,424,232 name combinations that we need to check.
+Before diving in to the initial results, I'd like to make a few notes on the implementation. Firstly, we're using python's generator expressions to capture the actual computation. This is massively preferable to a list comprehension as the results are always lazily evaluated, meaning that our program is actually `O(1)` in terms of memory usage as opposed to `O(M*N)` were to try and store everything in a list. Additionally, we're writing straight to the output file - previously I had a print statement to print out names without non-repeating characters, however as a general principle we can assume that disk IO will be faster that printing to stdout. Of course, for true performance benchmarks we should ultimately try and remove this IO overhead entirely from any performance measurements to capture the algorithm in isolation.
 
-I left this running, and it took a grand total of <<some time>> to run on my machine.
+So how bad is it? This naive solution is clearly suboptimal, it has time complexity `O(M*N)` where `M` and `N` are the number of first and last names respectivelt. For our dataset this is 15,789,424,232 name combinations that we need to check.
+
+I left this running, and it took a grand total of 1hr 49m 20s to run on my machine and reported a total of 149,490,149 names with no repeating characters. In fact, the resulting `result.txt` was 1.7GB in size.
 
 ### A Small Improvement
 
@@ -56,10 +57,13 @@ for first, last in product(first_names, last_names):
         non_repeating_names.append(name)        
 ```
 
-This takes us down to only 54,834 first names and 3,6041 last names. So now our time complexity is `O(M'*N')` where `M' < M` and `N < N'`. For our names dataset, this cuts us down to 1,976,272,194 name combinations to check. So we've shaved off two orders of magnitude!
+This takes us down to only 54,834 first names and 3,6041 last names. So now our time complexity is `O(M'*N')` where `M' < M` and `N' < N`. For our names dataset, this cuts us down to 1,976,272,194 name combinations to check. So we've shaved off two orders of magnitude!
 
-Indeed, on my machine this took <<SOME TIME>> to run to completion. Of course, this isn't a rigourous performance benchmark, but it does at least serve as a finger-in-the-wind point of comparison.
+Indeed, on my machine this took a comparatively minuscule 14m 42s to run to completion. Of course, this isn't a rigourous performance benchmark, but it does at least serve as a finger-in-the-wind point of comparison.
 
 ### The Quest For Linear Time
 
 We've managed to cut down our runtime by a factor of <<SOME FACTOR>>, but can we do better? Both the algoritms thus far have had quadratic time complexity. Would it be possible to construct an algorithm in linear time? After all, we're checking lots of name combinations that possibly don't need to be checked. I've done enough hackerrank problems to know that some sort of lookup table should be able to come to the rescue here.
+
+
+Now with these improvements, the total runtime has now reduced to 3minutes and 10seconds on my most recent run!
