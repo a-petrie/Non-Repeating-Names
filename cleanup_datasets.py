@@ -27,15 +27,12 @@ def read_name_dataset(dataset_file: str) -> [str]:
     with open(dataset_file) as f:
         return [name.strip() for name in f.readlines()]
 
-if __name__ == "__main__":
-
-    first_names = read_name_dataset(FIRST_NAMES)
-    first_names = cleanup(first_names) 
-    
+def clean_dataset(dataset: str) -> None:
+    names = read_name_dataset(FIRST_NAMES)
+    names = cleanup(names) 
     with open(FIRST_NAMES, "w") as f:
-        f.write("\n".join(first_names))
+        f.write("\n".join(names))
 
-    last_names = read_name_dataset(LAST_NAMES)
-    last_names = cleanup(last_names)
-    with open(LAST_NAMES, "w") as f:
-        f.write("\n".join(last_names))
+if __name__ == "__main__":
+    clean_dataset(FIRST_NAMES)
+    clean_dataset(LAST_NAMES)
