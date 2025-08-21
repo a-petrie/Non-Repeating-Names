@@ -839,7 +839,7 @@ abduel
 abduh
 abdul
 abdul'malik
-abdul-
+abdul
 abdul-ahad
 abdul-aleem
 abdul-azeez
@@ -3421,7 +3421,7 @@ aimar
 aimara
 aime
 aimee
-aimee-
+aimee
 aimee-anna
 aimee-elizabeth
 aimee-grace
@@ -5259,7 +5259,7 @@ alfhild
 alfi
 alfia
 alfie
-alfie-
+alfie
 alfie-craig
 alfie-dee
 alfie-george
@@ -7066,7 +7066,7 @@ ambe
 ambee
 ambellina
 amber
-amber-
+amber
 amber-jade
 amber-jane
 amber-jayne
@@ -7770,7 +7770,7 @@ amunra
 amuri
 amvi
 amy
-amy-
+amy
 amy-ann
 amy-anne
 amy-beth
@@ -9228,7 +9228,7 @@ anmol
 ann
 ann-marie
 anna
-anna-
+anna
 anna-bella
 anna-beth
 anna-diana
@@ -14033,7 +14033,7 @@ auzhane
 auzie
 auzinda
 ava
-ava-
+ava
 ava-blu
 ava-catherine
 ava-elizabeth
@@ -18058,7 +18058,7 @@ bethanni
 bethannie
 bethanny
 bethany
-bethany-
+bethany
 bethany-ann
 bethany-anne
 bethany-jade
@@ -18632,7 +18632,7 @@ billi
 billi-jo
 billib
 billie
-billie-
+billie
 billie-ann
 billie-anne
 billie-claire
@@ -20471,7 +20471,7 @@ brandolini
 brandolyn
 brandom
 brandon
-brandon-
+brandon
 brandon-james
 brandon-lee
 brandon-leigh
@@ -24907,7 +24907,7 @@ caseres
 casesa
 caseson
 caseton
-casey-
+casey
 casey-ann
 casey-anne
 casey-jacob
@@ -26763,7 +26763,7 @@ charlice
 charlicia
 charlidh
 charlie
-charlie-
+charlie
 charlie-adam
 charlie-alexander
 charlie-ann
@@ -28100,7 +28100,7 @@ chleo
 chlo
 chloa
 chloe
-chloe-
+chloe
 chloe-aime
 chloe-ann
 chloe-anne
@@ -31137,7 +31137,7 @@ courtne
 courtnee
 courtnei
 courtney
-courtney-
+courtney
 courtney-jade
 courtney-jane
 courtney-jayne
@@ -32726,7 +32726,7 @@ daison
 daissy
 daisuke
 daisy
-daisy-
+daisy
 daisy-ann
 daisy-anna
 daisy-anne
@@ -36716,7 +36716,7 @@ demetry
 demeturis
 demeyer
 demi
-demi-
+demi
 demi-ann
 demi-anne
 demi-debbie
@@ -42270,7 +42270,7 @@ ebonique
 ebonne
 ebonni
 ebonnie
-ebony-
+ebony
 ebony-eileen
 ebony-grace
 ebony-j
@@ -44166,7 +44166,7 @@ elko
 elky
 ell
 ella
-ella-
+ella
 ella-ann
 ella-brooke
 ella-faith
@@ -44252,7 +44252,7 @@ ellayah
 ellayna
 ellcey
 elle
-elle-
+elle
 elle-ann
 elle-jade
 elle-jane
@@ -44358,7 +44358,7 @@ ellicia
 ellicott
 ellidh
 ellie
-ellie-
+ellie
 ellie-amelia
 ellie-ann
 ellie-anna
@@ -45205,7 +45205,7 @@ emils
 emilse
 emilson
 emily
-emily-
+emily
 emily-ann
 emily-anne
 emily-elizabeth
@@ -45281,7 +45281,7 @@ emlyn
 emlynn
 emlynne
 emma
-emma-
+emma
 emma-ann
 emma-anne
 emma-faye
@@ -46178,7 +46178,7 @@ erilyn
 erilynn
 erim
 erin
-erin-
+erin
 erin-grace
 erin-lee
 erin-leigh
@@ -47701,7 +47701,7 @@ eviana
 evianna
 evica
 evie
-evie-
+evie
 evie-ann
 evie-anne
 evie-eliana
@@ -55325,7 +55325,7 @@ gracianne
 graciano
 graciano-ortiz
 gracie
-gracie-
+gracie
 gracie-ann
 gracie-anne
 gracie-jane
@@ -61110,7 +61110,7 @@ holloway
 hollowell
 hollriegel
 holly
-holly-
+holly
 holly-ann
 holly-anne
 holly-grace
@@ -67147,7 +67147,7 @@ jamicheal
 jamicia
 jamicka
 jamie
-jamie-
+jamie
 jamie-ann
 jamie-coll
 jamie-jay
@@ -68933,7 +68933,7 @@ jaxzen
 jaxzon
 jaxzyn
 jay
-jay-
+jay
 jay-christopher
 jay-d
 jay-dee
@@ -69618,7 +69618,7 @@ jealousy
 jealyn
 jeamileth
 jean
-jean-
+jean
 jean-baptiste
 jean-bart
 jean-charles
@@ -71128,7 +71128,7 @@ jessianna
 jessianne
 jessic
 jessica
-jessica-
+jessica
 jessica-ann
 jessica-anne
 jessica-jade
@@ -72467,7 +72467,7 @@ johileny
 johirul
 johm
 john
-john-
+john
 john-adam
 john-alan
 john-alexander
@@ -73524,7 +73524,7 @@ joshpal
 joshton
 joshu
 joshua
-joshua-
+joshua
 joshua-daniel
 joshua-david
 joshua-dean
@@ -74919,7 +74919,7 @@ kacerek
 kaceson
 kaceton
 kacey
-kacey-
+kacey
 kacey-ann
 kacey-jade
 kacey-jane
@@ -77768,7 +77768,7 @@ katianne
 katibe
 katica
 katie
-katie-
+katie
 katie-angel
 katie-ann
 katie-anne
@@ -79493,7 +79493,7 @@ kelsei
 kelseigh
 kelsen
 kelsey
-kelsey-
+kelsey
 kelsey-jo
 kelsey-leigh
 kelsey-louise
@@ -85552,7 +85552,7 @@ lacelyn
 lacen
 lacen-pizarro
 lacey
-lacey-
+lacey
 lacey-ann
 lacey-anne
 lacey-grace
@@ -88037,7 +88037,7 @@ launie
 launius
 laur
 laura
-laura-
+laura
 laura-ann
 laura-anne
 laura-beth
@@ -90418,7 +90418,7 @@ lexes
 lexey
 lexghi
 lexi
-lexi-
+lexi
 lexi-amelia
 lexi-ann
 lexi-anne
@@ -90451,7 +90451,7 @@ lexiana
 lexiann
 lexianna
 lexie
-lexie-
+lexie
 lexie-ann
 lexie-anne
 lexie-grace
@@ -90653,7 +90653,7 @@ libbi
 libbie
 libbna
 libby
-libby-
+libby
 libby-ann
 libby-anne
 libby-jane
@@ -91059,7 +91059,7 @@ lilliaunna
 lillibeth
 lillibridge
 lillie
-lillie-
+lillie
 lillie-ann
 lillie-anna
 lillie-anne
@@ -91106,7 +91106,7 @@ lilliyn
 lilllie
 lillo
 lilly
-lilly-
+lilly
 lilly-an
 lilly-ann
 lilly-anna
@@ -91177,7 +91177,7 @@ liltricia
 lilu
 lilwen
 lily
-lily-
+lily
 lily-amari
 lily-amerie
 lily-ann
@@ -92272,7 +92272,7 @@ loklun
 lokman
 lola
 lola'rose
-lola-
+lola
 lola-belle
 lola-brooke
 lola-faith
@@ -93420,7 +93420,7 @@ lucuis
 lucus
 lucuss
 lucy
-lucy-
+lucy
 lucy-ann
 lucy-anna
 lucy-anne
@@ -98469,7 +98469,7 @@ marjukka
 marjut
 marjy
 mark
-mark-
+mark
 mark-andrew
 mark-anthony
 mark-antony
@@ -99394,7 +99394,7 @@ marwo
 marwood
 marx
 mary
-mary-
+mary
 mary-ann
 mary-anne
 mary-beth
@@ -103081,7 +103081,7 @@ mhyrin
 mhyrnn
 mhyrren
 mia
-mia-
+mia
 mia-ann
 mia-bella
 mia-brooke
@@ -104080,7 +104080,7 @@ milliard
 millican
 millicent
 millie
-millie-
+millie
 millie-ann
 millie-anne
 millie-b
@@ -105170,7 +105170,7 @@ mohammadali
 mohammadomar
 mohammadou
 mohammed
-mohammed-
+mohammed
 mohammed-adam
 mohammed-ali
 mohammed-ayaan
@@ -105342,7 +105342,7 @@ molli
 molli-rose
 mollica
 mollie
-mollie-
+mollie
 mollie-ann
 mollie-anne
 mollie-jane
@@ -105357,7 +105357,7 @@ mollie-rose
 mollineda
 molloy
 molly
-molly-
+molly
 molly-ann
 molly-anne
 molly-grace
@@ -105923,7 +105923,7 @@ morfydd
 morgado
 morgaine
 morgan
-morgan-
+morgan
 morgan-deleon
 morgan-hope
 morgan-james
@@ -106462,7 +106462,7 @@ muhamadou
 muhamed
 muhamet
 muhammad
-muhammad-
+muhammad
 muhammad-aadam
 muhammad-aariz
 muhammad-abdullah
@@ -113669,7 +113669,7 @@ olivet
 olivett
 olivette
 olivia
-olivia-
+olivia
 olivia-ann
 olivia-faith
 olivia-grace
@@ -124688,7 +124688,7 @@ rileigh
 rilen
 riles
 riley
-riley-
+riley
 riley-boy
 riley-dean
 riley-eddie
@@ -126558,7 +126558,7 @@ rosica
 rosicela
 rosidarinka
 rosie
-rosie-
+rosie
 rosie-ann
 rosie-anne
 rosie-beth
@@ -127077,7 +127077,7 @@ ruble
 rubn
 rubright
 ruby
-ruby-
+ruby
 ruby-ann
 ruby-anne
 ruby-blu
@@ -130086,7 +130086,7 @@ sarafraj
 saragosa
 saragrace
 sarah
-sarah-
+sarah
 sarah-ann
 sarah-anne
 sarah-beth
@@ -133688,7 +133688,7 @@ shannin
 shanniya
 shanno
 shannon
-shannon-
+shannon
 shannon-lee
 shannon-leigh
 shannon-louise
@@ -138454,7 +138454,7 @@ sophianna
 sophiarose
 sophiat
 sophie
-sophie-
+sophie
 sophie-ann
 sophie-anne
 sophie-ella
@@ -140290,7 +140290,7 @@ summar
 summaya
 summayah
 summayyah
-summer-
+summer
 summer-grace
 summer-jade
 summer-jane
@@ -143735,7 +143735,7 @@ tayllor
 tayln
 taylon
 taylor
-taylor-
+taylor
 taylor-ann
 taylor-anne
 taylor-christensen
@@ -145784,7 +145784,7 @@ thyrone
 thyrza
 thys
 tia
-tia-
+tia
 tia-ann
 tia-grace
 tia-jade
@@ -146236,7 +146236,7 @@ tillmann
 tillmon
 tillo
 tilly
-tilly-
+tilly
 tilly-ann
 tilly-anne
 tilly-grace
@@ -149313,7 +149313,7 @@ tylena
 tylene
 tylenn
 tyler
-tyler-
+tyler
 tyler-dean
 tyler-george
 tyler-gordon
