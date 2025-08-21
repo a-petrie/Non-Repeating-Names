@@ -11,12 +11,12 @@ class Lookup:
     table = dict()
 
     def __init__(self, names: [str]):
-        self.chars = set(''.join(names))
-        for char in self.chars:
+        chars = set(''.join(names))
+        for char in chars:
             self.table[char] = set()
 
         for name in names:
-            chars_not_present = self.chars - set(name)
+            chars_not_present = chars - set(name)
             for char in chars_not_present:
                 self.table[char].add(name)
             
