@@ -21,7 +21,7 @@ def cleanup(names):
         for fix in DISALLOWED_FIXES:
             name = name.removeprefix(fix).removesuffix(fix)
         new_names.append(name)
-    return new_names
+    return sorted(list(set(new_names)))
 
 def read_name_dataset(dataset_file: str) -> [str]:
     with open(dataset_file) as f:
