@@ -16,6 +16,8 @@ def cleanup(names):
     names = [name for name in names if is_ascii(name)]
     new_names = []
     for name in names:
+        if "/" in name:
+            name = name.replace("/", "\n")
         for fix in DISALLOWED_FIXES:
             name = name.removeprefix(fix).removesuffix(fix)
         new_names.append(name)

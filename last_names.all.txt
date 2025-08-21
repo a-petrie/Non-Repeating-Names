@@ -75298,7 +75298,8 @@ rogas
 rogel
 rogens
 roger
-rogers/manning
+rogers
+manning
 rogersjr
 rogerson
 rogg
@@ -81064,7 +81065,8 @@ shakti
 shakun
 shakuntala
 shakuntla
-shakuntla/baby
+shakuntla
+baby
 shakutal
 shala
 shalam
@@ -82581,8 +82583,10 @@ singler
 singletary
 singleterry
 singleton
-singleton/holt
-singleton/malachi
+singleton
+holt
+singleton
+malachi
 singley
 singlton
 singo
@@ -83292,7 +83296,8 @@ smit
 smith
 smith-glee
 smith-mcbride
-smith/kling
+smith
+kling
 smithberger
 smithe
 smithee
@@ -94101,7 +94106,8 @@ warf
 warfel
 warfield
 warford
-warford/cravenwolfe
+warford
+cravenwolfe
 warga
 wargo
 warhol
@@ -94304,7 +94310,8 @@ wattigny
 wattles
 wattley
 watton
-watts/salaamjr
+watts
+salaamjr
 wattson
 watwood
 watzka
@@ -96437,7 +96444,8 @@ woodcox
 wooddell
 woode
 woodell
-wooden/hall
+wooden
+hall
 woodend
 wooderson
 woodert
