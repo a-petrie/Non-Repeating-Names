@@ -14,14 +14,12 @@ def is_ascii(s):
 
 def cleanup(names):
     names = [name for name in names if is_ascii(name)]
-    new_names = []
-    for name in names:
+    for i, name in enumerate(names):
         if "/" in name:
-            name = name.replace("/", "\n")
+            names[i] = name.replace("/", "\n")
         for fix in DISALLOWED_FIXES:
-            name = name.removeprefix(fix).removesuffix(fix)
-        new_names.append(name)
-    return sorted(list(set(new_names)))
+            names[i] = name.removeprefix(fix).removesuffix(fix)
+    return sorted(list(set(names)))
 
 def read_name_dataset(dataset_file: str) -> [str]:
     with open(dataset_file) as f:
