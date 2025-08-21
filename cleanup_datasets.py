@@ -16,7 +16,9 @@ def cleanup(names):
     names = [name for name in names if is_ascii(name)]
     for i, name in enumerate(names):
         if "/" in name:
-            names[i] = name.replace("/", "\n")
+            split = names.split("/")
+            names[i] = split[0]
+            names.append(split[1])
         for fix in DISALLOWED_FIXES:
             names[i] = name.removeprefix(fix).removesuffix(fix)
     return sorted(list(set(names)))
