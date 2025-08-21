@@ -7,14 +7,19 @@ from utils import load_dataset, is_ascii, has_no_repeating_characters
 
 from itertools import product
 
-if __name__ == "__main__":
-    first_names, last_names = load_dataset()
-    first_names = [name for name in first_names if has_no_repeating_characters(name)]
-    last_names = [name for name in last_names if has_no_repeating_characters(name)]
+def filter_non_ascii_names(names):
+    return (name for name in names if has_no_repeating_characters(name))
+
+def non_repeating(first_names, last_names):
+    first_names = filter_non_ascii_names(first_names)
+    last_names = filter_non_ascii_names(last_names)
 
     names = (f"{first} {last}" for first, last in product(first_names, last_names))
-    non_repeating_names = (name for name in names if has_no_repeating_characters(name))
+    return (name for name in names if has_no_repeating_characters(name))
+
+if __name__ == "__main__":
+    first_names, last_names = load_dataset()
 
     with open("result.txt", "w") as f:
-        for name in non_repeating_names:
+        for name in non_repeating(first_names, last_names):
             f.write(name + "\n")
