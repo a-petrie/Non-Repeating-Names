@@ -5,6 +5,8 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'c
 
 from utils import load_dataset, has_no_repeating_characters
 
+def set_to_string(charset) -> str:
+    return str(''.join(sorted(c for c in charset)))
 
 class Lookup:
 
@@ -23,14 +25,16 @@ class Lookup:
 
     def does_not_contain_characters(self, name: str):
         name = set(name)
-        valid_names = self.get(name.pop())
-        for names_without_char in self.__get_all_for_name(name):
-            valid_names = set.intersection(valid_names, names_without_char)
-        return valid_names
-
-    def __get_all_for_name(self, name: set):
-        return (self.get(char) for char in name)
-
+        name_str = set_to_string(name)
+        if name_str in self.table:
+            valid = self.get(name_str)
+            return valid
+        else:
+            first = self.does_not_contain_characters(set_to_string(name.pop()))
+            rest = self.does_not_contain_characters(set_to_string(name))
+            self.table[set_to_string(name)] = rest
+            return set.intersection(first, rest)
+            
     def get(self, char: str):
         try:
             return self.table[char]
@@ -48,6 +52,7 @@ def non_repeating(first_names, last_names):
         valid_last_names = lookup.does_not_contain_characters(name)
         for full_name in (f"{name} {last_name}" for last_name in valid_last_names):
             yield full_name
+
 
 if __name__ == "__main__":
     first_names, last_names = load_dataset()

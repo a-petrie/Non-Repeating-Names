@@ -3,7 +3,7 @@ import sys
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'common')))
 
-from utils import load_dataset, is_ascii, has_no_repeating_characters
+from utils import load_dataset, has_no_repeating_characters
 
 from itertools import product
 
