@@ -28,7 +28,7 @@ class Lookup:
             valid_names = set.intersection(valid_names, names_without_char)
         return valid_names
 
-    def __get_all_for_name(self, name: str):
+    def __get_all_for_name(self, name: set):
         return (self.get(char) for char in name)
 
     def get(self, char: str):
