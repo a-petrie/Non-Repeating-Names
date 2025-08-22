@@ -28,6 +28,11 @@ class Lookup:
         return valid_names
 
 def non_repeating(first_names, last_names):
+    first_names = [n for n in first_names if has_no_repeating_characters(n)]
+    last_names = [n for n in last_names if has_no_repeating_characters(n)]
+
+    lookup = Lookup(last_names)
+
     for name in first_names:
         valid_last_names = lookup.does_not_contain_characters(name)
         for full_name in (f"{name} {last_name}" for last_name in valid_last_names):
@@ -36,14 +41,6 @@ def non_repeating(first_names, last_names):
 if __name__ == "__main__":
     first_names, last_names = load_dataset()
 
-    first_names = [n for n in first_names if is_ascii(n)]
-    last_names = [n for n in last_names if is_ascii(n)]
-
-    first_names = [n for n in first_names if has_no_repeating_characters(n)]
-    last_names = [n for n in last_names if has_no_repeating_characters(n)]
-
-    lookup = Lookup(last_names)
-
-    with open("results.txt", "w") as f:
+    with open("result.txt", "w") as f:
         for name in non_repeating(first_names, last_names):
             f.write(name + "\n")
