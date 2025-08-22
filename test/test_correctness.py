@@ -37,3 +37,11 @@ class TestNonRepeatingNames(unittest.TestCase):
     def test_linear_time(self):
         actual = sorted(list(linear_time.non_repeating(self.first_names, self.last_names)))
         self.assertListEqual(actual, self.expected)
+
+    def test_should_be_robust_against_missing_characters(self):
+        first_names = ["jim"]
+        last_names = ["bean"]
+        expected = ["jim bean"]
+
+        actual = list(linear_time.non_repeating(first_names, last_names))
+        self.assertListEqual(actual, expected)

@@ -8,9 +8,9 @@ from utils import load_dataset, is_ascii, has_no_repeating_characters
 
 class Lookup:
 
-    table = dict()
-
     def __init__(self, names: [str]):
+        self.table = dict()
+
         chars = set(''.join(names))
         for char in chars:
             self.table[char] = set()
@@ -19,13 +19,24 @@ class Lookup:
             chars_not_present = chars - set(name)
             for char in chars_not_present:
                 self.table[char].add(name)
-            
+        self.all_names = set(names)
+
     def does_not_contain_characters(self, name: str):
         name = set(name)
-        valid_names = self.table[name.pop()]
-        for names_without_char in (self.table[char] for char in name):
+        valid_names = self.get(name.pop())
+        for names_without_char in self.__get_all_for_name(name):
             valid_names = set.intersection(valid_names, names_without_char)
         return valid_names
+
+    def __get_all_for_name(self, name: str):
+        return (self.get(char) for char in name)
+
+    def get(self, char: str):
+        try:
+            return self.table[char]
+        except KeyError:
+            return self.all_names
+
 
 def non_repeating(first_names, last_names):
     first_names = [n for n in first_names if has_no_repeating_characters(n)]
