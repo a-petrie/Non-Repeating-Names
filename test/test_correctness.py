@@ -1,11 +1,12 @@
 import os
 import sys
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '*')))
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'common')))
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'naive')))
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'prefilter')))
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'linear_time')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'further_optimisations')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'alternative_algorithm')))
 
 import unittest
 
@@ -14,6 +15,7 @@ from utils import load_dataset
 import naive
 import prefilter
 import linear_time
+import optimised
 
 class TestNonRepeatingNames(unittest.TestCase):
 
@@ -36,6 +38,10 @@ class TestNonRepeatingNames(unittest.TestCase):
 
     def test_linear_time(self):
         actual = sorted(list(linear_time.non_repeating(self.first_names, self.last_names)))
+        self.assertListEqual(actual, self.expected)
+
+    def test_lookup_optim(self):
+        actual = sorted(list(optimised.non_repeating(self.first_names, self.last_names)))
         self.assertListEqual(actual, self.expected)
 
     def test_should_be_robust_against_missing_characters(self):
