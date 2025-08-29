@@ -26,6 +26,8 @@ class Lookup:
     def does_not_contain_characters(self, name: str):
         name = set(name)
         name_str = set_to_string(name)
+        if len(name) == 0:
+            return self.all_names
         if name_str in self.table:
             valid = self.get(name_str)
             return valid
@@ -35,7 +37,6 @@ class Lookup:
             rest = self.get(last_char)
             self.table[prefix] = first
             return set.intersection(first, rest)
-
 
     def get(self, char: str):
         if char not in self.table:
