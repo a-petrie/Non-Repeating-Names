@@ -48,4 +48,3 @@ class TestNonRepeatingNames(unittest.TestCase):
         for alg in self.algs:
             actual = list(alg(first_names, last_names))
             self.assertListEqual(actual, expected)
-
