@@ -1,2 +1,7 @@
 result.txt
 */__pycache__/**
+*.pyc
+test/.benchmarks
+test/.pytest*
+names/*
+
