@@ -30,16 +30,17 @@ class Lookup:
             valid = self.get(name_str)
             return valid
         else:
-            first = self.does_not_contain_characters(set_to_string(name.pop()))
-            rest = self.does_not_contain_characters(set_to_string(name))
-            self.table[set_to_string(name)] = rest
+            prefix, last_char = name_str[:-1], name_str[-1:]
+            first = self.does_not_contain_characters(prefix)
+            rest = self.get(last_char)
+            self.table[prefix] = first
             return set.intersection(first, rest)
-            
+
+
     def get(self, char: str):
-        try:
-            return self.table[char]
-        except KeyError:
+        if char not in self.table:
             return self.all_names
+        return self.table[char]
 
 
 def non_repeating(first_names, last_names):
@@ -50,8 +51,8 @@ def non_repeating(first_names, last_names):
 
     for name in first_names:
         valid_last_names = lookup.does_not_contain_characters(name)
-        for full_name in (f"{name} {last_name}" for last_name in valid_last_names):
-            yield full_name
+        for last_name in valid_last_names:
+            yield f"{name} {last_name}"
 
 
 if __name__ == "__main__":
